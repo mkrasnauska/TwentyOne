@@ -11,16 +11,16 @@ namespace TwentyOne
     {
         static void Main(string[] args)
         {
+            _21Game game = new _21Game();
             Deck deck = new Deck();
             deck.Shuffle(3);
-            //deck = Shuffle(deck);
             foreach (Card card in deck.Cards)
             {
                 Console.WriteLine(card.Face + " Of " + card.Suit);
             }
             Console.WriteLine("Total of " + deck.Cards.Count + " Card's");
             Console.ReadLine();
-        }    
         }
     }
+}
 
